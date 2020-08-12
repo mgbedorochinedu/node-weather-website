@@ -9,13 +9,13 @@ const forecast = require ("./util/forecast")
 
 //Define paths for Express config
 const publicDirPath = path.join(__dirname, "../public")
-const viewsPath = path.join(__dirname, "../templates/views") //this is the path for views folder
-const partialsPath = path.join(__dirname, "../templates/partials") //this is the path for partials folder
+const viewsPath = path.join(__dirname, "../templates/views") 
+const partialsPath = path.join(__dirname, "../templates/partials") 
 
 //setup handlebars 
 app.set("view engine", "hbs")
 app.set("views", viewsPath)
-hbs.registerPartials(partialsPath) //this take a path to the directory where our partials lives  
+hbs.registerPartials(partialsPath)  
 
 //setup static directory to serve
 app.use(express.static(publicDirPath))
@@ -47,19 +47,18 @@ app.get("/weather", (req, res) => {
             error: "Please provide your search address"
         })
     }
-geocode(req.query.address, (error, {latitude, logtitude, location} = {} ) => { //we set up an empty object default value  
+geocode(req.query.address, (error, {latitude, logtitude, location} = {} ) => { 
         if(error){
  return res.send({ error }) 
 } 
- forecast(latitude, logtitude, (error, forecastData) => { //using destructuring on forecast nested on geocode function
+ forecast(latitude, logtitude, (error, forecastData) => { 
             if(error){
-    return res.send({ error })//setting up destructuring, if there was an error, return error handler message on forecast.js
+    return res.send({ error })
  }
-            res.send({ //this code run if everything went well.
+            res.send({ 
                 forecast: forecastData,
                 location,
                 address: req.query.address
-              
             })
         }) 
     })

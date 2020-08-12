@@ -36,7 +36,7 @@ header a {
     font-size: 20px
 }
 .portrait {
-    width: 250px; /* //We gave our IMG a class of portrait in other to ctrl the IMG size on about page. */
+    width: 250px; 
 } 
 
 input {
@@ -45,7 +45,7 @@ input {
 }
 
 button {
-    cursor: pointer; /* cursor allows us to customize the appearance of the cursor when hovering things */
+    cursor: pointer; 
     border: 1px solid #888888;
     background: #888888;
     color: white;
