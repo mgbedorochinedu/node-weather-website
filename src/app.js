@@ -1,11 +1,11 @@
 const path = require("path")
 const express = require ("express")
-const app = express()
 const hbs = require("hbs")
 const geocode = require("./util/geocoding")
 const forecast = require ("./util/forecast") 
 
-
+const app = express()
+const port = process.env.PORT || 3000 //this means port is Heroku value or our local value
 
 //Define paths for Express config
 const publicDirPath = path.join(__dirname, "../public")
@@ -95,6 +95,6 @@ app.get("*", (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Server have started")
+app.listen(port, () => {
+    console.log("Server have started at " + port )
 })
