@@ -12,8 +12,35 @@
 </head>
 <body>
     <div class= "main-content">
-        <h1>{{>header}}</h1>
+        <h1 class="h1Head">{{>header}}</h1>
+
+        <h1> <strong>Contact us</strong></h1>
+        <form action="">
+            <div>
+            <label value="username" for="username"><strong>Username:</strong></label>
+            <input class='form' id="username" type="text" placeholder="please enter your username" required>
+            </div>
+
+            <div>
+            <label value="password" for="password"> <strong>Password:</strong></label>
+            <input class='form' id="password" type="password" placeholder="must have atleast 8 characters" required>
+            </div>
+
+            <div>
+            <label value="email" for="email"><strong>Work Email:</strong> </label>
+            <input class='form' type="email" name="" id="email" placeholder="please enter your email" required>
+            </div>
+            <br>
+            <button id="submit" value="submit">Submit</button>
+
+        </form>
+        <br>
+        <p>Already on Weather forecast? <a href="#"><strong>Log in</strong></a></p>
+
+
     <img class="portrait" src="/image/ned.jpg" alt="">
+
+    
 
     </div>
     

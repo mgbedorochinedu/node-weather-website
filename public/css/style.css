@@ -25,18 +25,19 @@ header {
     margin-top: 16px;
     margin-bottom: 48px;
 }
-h1 {
+.h1Head {
 font-size: 58px;
 margin-bottom: 16px;
 }
 header a {
     color: #888888;
-    margin-right: 16px;
+    margin-right: 100px;
     text-decoration: none;
     font-size: 20px
 }
 .portrait {
     width: 250px; 
+    margin-top: 25px;
 } 
 
 input {
@@ -50,7 +51,98 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+
+    background-color:#054AF5;
+    
+  
+    
+
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
+.forecast{
+    width: 650px;
+    border: 1px solid #888888;
+    
+}
 
+.pfooter{
+    text-align: center;
+    font-size: 12px;
+}
+.quote{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: justify;
 
+    padding-bottom: 4px;
+}
+h2{
+    color: blue;
+}
+.para{
+    line-height: 30px;
+    text-align: justify;
+}
+
+.picQuote{
+    text-align: center;
+    font-size: 9px;
+    line-height: 16px;
+}
+
+.picWeather{
+    width: 400px;
+ margin-top: 16px;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+input{
+    width: 50%;
+
+}
+
+  .form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+    border: 2px solid  grey;
+    border-radius: 4px;
+     background-color: white;
+     border: none;
+     border-bottom: 2px solid rgba(174, 173, 247, 0.329);
+  }
+
+  input[type=text]:focus {
+    background-color: #F1F3F4;
+  }
+  input[type=password]:focus {
+    background-color: #F1F3F4;
+  }
+  input[type=email]:focus {
+    background-color: #F1F3F4;
+  }
+  #submit{
+    background-color:#054AF5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+p{
+    line-height: 30px;
+    text-align: justify;
+}
